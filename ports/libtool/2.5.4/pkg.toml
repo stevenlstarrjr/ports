@@ -1,0 +1,21 @@
+name = "libtool"
+version = "2.5.4"
+summary = "Imported LFS stage8 script: 8.37-libtool.sh"
+license = "LFS"
+
+deps = ["bash"]
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+
+[src]
+type = "url"
+url = "https://ftp.gnu.org/gnu/libtool/libtool-2.5.4.tar.xz"
+sha256 = "f81f5860666b0bc7d84baddefa60d1cb9fa6fceb2398cc3baca6afaa60266675"

@@ -1,0 +1,19 @@
+name = "pkg"
+version = "main"
+summary = "System package manager"
+license = "MIT"
+
+deps = ["gcc", "gcc-runtime", "python", "meson", "ninja"]
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+[src]
+type = "git"
+url = "https://github.com/stevenlstarrjr/pkg.git"

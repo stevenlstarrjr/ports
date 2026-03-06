@@ -1,0 +1,19 @@
+name = "googletest"
+version = "latest"
+summary = "GoogleTest and GoogleMock C++ test framework"
+license = "BSD-3-Clause"
+
+deps = ["cmake"]
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+[src]
+type = "git"
+url = "https://github.com/google/googletest.git"

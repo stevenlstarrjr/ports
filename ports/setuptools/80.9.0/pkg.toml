@@ -1,0 +1,21 @@
+name = "setuptools"
+version = "80.9.0"
+summary = "Imported LFS stage8 script: 8.55-setuptools.sh"
+license = "LFS"
+
+deps = ["wheel"]
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+
+[src]
+type = "url"
+url = "https://pypi.org/packages/source/s/setuptools/setuptools-80.9.0.tar.gz"
+sha256 = "f36b47402ecde768dbfafc46e8e4207b4360c654f1f3bb84475f0a28628fb19c"

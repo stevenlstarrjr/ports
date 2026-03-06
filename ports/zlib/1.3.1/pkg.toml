@@ -1,0 +1,21 @@
+name = "zlib"
+version = "1.3.1"
+summary = "Imported LFS stage8 script: 8.06-zlib.sh"
+license = "LFS"
+
+deps = []
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+
+[src]
+type = "url"
+url = "https://zlib.net/fossils/zlib-1.3.1.tar.gz"
+sha256 = "9a93b2b7dfdac77ceba5a558a580e74667dd6fede4585b91eefb60f03b72df23"

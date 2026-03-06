@@ -1,0 +1,19 @@
+name = "skia"
+version = "latest"
+summary = "Skia 2D graphics library"
+license = "BSD-3-Clause"
+
+deps = ["gn", "ninja", "wayland", "mesa", "vulkan-headers", "vulkan-loader", "zlib", "libpng", "jpeg-turbo", "giflib", "libwebp", "freetype", "harfbuzz", "expat", "icu", "fontconfig"]
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+[src]
+type = "git"
+url = "https://skia.googlesource.com/skia.git"

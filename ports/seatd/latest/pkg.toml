@@ -1,0 +1,20 @@
+name = "seatd"
+version = "latest"
+summary = "Seat management daemon and libseat"
+license = "MIT"
+
+deps = []
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+[src]
+type = "git"
+url = "https://git.sr.ht/~kennylevinsen/seatd"
+

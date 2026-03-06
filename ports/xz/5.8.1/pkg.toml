@@ -1,0 +1,21 @@
+name = "xz"
+version = "5.8.1"
+summary = "Imported LFS stage8 script: 8.08-xz.sh"
+license = "LFS"
+
+deps = []
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+
+[src]
+type = "url"
+url = "https://github.com//tukaani-project/xz/releases/download/v5.8.1/xz-5.8.1.tar.xz"
+sha256 = "0b54f79df85912504de0b14aec7971e3f964491af1812d83447005807513cd9e"

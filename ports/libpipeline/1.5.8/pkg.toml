@@ -1,0 +1,21 @@
+name = "libpipeline"
+version = "1.5.8"
+summary = "Imported LFS stage8 script: 8.68-libpipeline.sh"
+license = "LFS"
+
+deps = []
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+
+[src]
+type = "url"
+url = "https://download.savannah.gnu.org/releases/libpipeline/libpipeline-1.5.8.tar.gz"
+sha256 = "1b1203ca152ccd63983c3f2112f7fe6fa5afd453218ede5153d1b31e11bb8405"

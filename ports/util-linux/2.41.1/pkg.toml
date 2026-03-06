@@ -1,0 +1,21 @@
+name = "util-linux"
+version = "2.41.1"
+summary = "Imported LFS stage8 script: 8.80-util-linux.sh"
+license = "LFS"
+
+deps = []
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+
+[src]
+type = "url"
+url = "https://www.kernel.org/pub/linux/utils/util-linux/v2.41/util-linux-2.41.1.tar.xz"
+sha256 = "be9ad9a276f4305ab7dd2f5225c8be1ff54352f565ff4dede9628c1aaa7dec57"

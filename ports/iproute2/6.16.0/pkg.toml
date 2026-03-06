@@ -1,0 +1,21 @@
+name = "iproute2"
+version = "6.16.0"
+summary = "Imported LFS stage8 script: 8.66-iproute2.sh"
+license = "LFS"
+
+deps = []
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+
+[src]
+type = "url"
+url = "https://www.kernel.org/pub/linux/utils/net/iproute2/iproute2-6.16.0.tar.xz"
+sha256 = "5900ccc15f9ac3bf7b7eae81deb5937123df35e99347a7f11a22818482f0a8d0"

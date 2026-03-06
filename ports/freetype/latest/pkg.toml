@@ -1,0 +1,20 @@
+name = "freetype"
+version = "latest"
+summary = "Font rasterization library"
+license = "FTL OR GPL-2.0-or-later"
+
+deps = ["zlib", "libpng", "bzip2"]
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+[src]
+type = "git"
+url = "https://gitlab.freedesktop.org/freetype/freetype.git"
+

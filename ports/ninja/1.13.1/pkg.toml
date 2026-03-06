@@ -1,0 +1,21 @@
+name = "ninja"
+version = "1.13.1"
+summary = "Imported LFS stage8 script: 8.56-ninja.sh"
+license = "LFS"
+
+deps = ["setuptools"]
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+
+[src]
+type = "url"
+url = "https://github.com/ninja-build/ninja/archive/v1.13.1/ninja-1.13.1.tar.gz"
+sha256 = "f0055ad0369bf2e372955ba55128d000cfcc21777057806015b45e4accbebf23"

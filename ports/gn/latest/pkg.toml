@@ -1,0 +1,19 @@
+name = "gn"
+version = "latest"
+summary = "GN meta-build system"
+license = "BSD-3-Clause"
+
+deps = ["python", "ninja"]
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+[src]
+type = "git"
+url = "https://gn.googlesource.com/gn"

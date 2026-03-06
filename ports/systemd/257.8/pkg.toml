@@ -1,0 +1,21 @@
+name = "systemd"
+version = "257.8"
+summary = "Imported LFS stage8 script: 8.76-systemd.sh"
+license = "LFS"
+
+deps = ["dbus", "kmod", "openssl", "glib", "util-linux", "bzip2"]
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+
+[src]
+type = "url"
+url = "https://github.com/systemd/systemd/archive/v257.8/systemd-257.8.tar.gz"
+sha256 = "f280278161446fe3838bedb970c7b3998043ad107f7627735a81483218c6f6f9"

@@ -1,0 +1,21 @@
+name = "kmod"
+version = "34.2"
+summary = "Imported LFS stage8 script: 8.58-kmod.sh"
+license = "LFS"
+
+deps = []
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+
+[src]
+type = "url"
+url = "https://www.kernel.org/pub/linux/utils/kernel/kmod/kmod-34.2.tar.xz"
+sha256 = "5a5d5073070cc7e0c7a7a3c6ec2a0e1780850c8b47b3e3892226b93ffcb9cb54"

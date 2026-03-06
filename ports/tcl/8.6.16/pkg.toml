@@ -1,0 +1,21 @@
+name = "tcl"
+version = "8.6.16"
+summary = "Imported LFS stage8 script: 8.16-tcl.sh"
+license = "LFS"
+
+deps = ["flex"]
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+
+[src]
+type = "url"
+url = "https://downloads.sourceforge.net/tcl/tcl8.6.16-src.tar.gz"
+sha256 = "91cb8fa61771c63c262efb553059b7c7ad6757afa5857af6265e4b0bdc2a14a5"

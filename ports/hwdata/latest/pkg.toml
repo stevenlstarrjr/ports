@@ -1,0 +1,20 @@
+name = "hwdata"
+version = "latest"
+summary = "Hardware identification and lookup data files"
+license = "GPL-2.0-or-later"
+
+deps = []
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+[src]
+type = "git"
+url = "https://github.com/vcrhonek/hwdata.git"
+

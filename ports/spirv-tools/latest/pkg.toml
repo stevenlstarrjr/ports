@@ -1,0 +1,19 @@
+name = "spirv-tools"
+version = "latest"
+summary = "SPIR-V processing tools"
+license = "Apache-2.0"
+
+deps = ["spirv-headers"]
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+[src]
+type = "git"
+url = "https://github.com/KhronosGroup/SPIRV-Tools.git"

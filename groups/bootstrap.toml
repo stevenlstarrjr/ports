@@ -1,0 +1,18 @@
+name = "bootstrap"
+summary = "Smallest practical bootstrapping system: boot, login, networking, TLS, toybox userland, and package expansion"
+ports = [
+  "iana-etc",
+  "linux-api-headers",
+  "glibc",
+  "gcc-runtime",
+  "shadow",
+  "toybox",
+  "openssl",
+  "curl",
+  "kmod",
+  "iproute2",
+  "dbus",
+  "systemd",
+  "util-linux",
+  "e2fsprogs"
+]

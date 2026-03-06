@@ -1,0 +1,19 @@
+name = "rclone"
+version = "1.72.1"
+summary = "Command line program to manage files on cloud storage"
+license = "MIT"
+
+deps = ["go"]
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+[src]
+type = "url"
+url = "https://github.com/rclone/rclone/archive/refs/tags/v1.72.1.tar.gz"

@@ -1,0 +1,19 @@
+name = "mtdev"
+version = "latest"
+summary = "Multitouch protocol translation library"
+license = "MIT"
+
+deps = []
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+[src]
+type = "git"
+url = "https://github.com/whot/mtdev.git"

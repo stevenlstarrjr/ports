@@ -1,0 +1,15 @@
+name = "gcc-runtime"
+version = "15.2.0"
+summary = "Runtime shared libraries from GCC needed by C++ executables"
+license = "GPL-3.0-or-later WITH GCC-exception-3.1"
+
+deps = ["gcc"]
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"

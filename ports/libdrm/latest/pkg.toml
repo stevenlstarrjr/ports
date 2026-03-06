@@ -1,0 +1,19 @@
+name = "libdrm"
+version = "latest"
+summary = "Userspace interface to kernel DRM services"
+license = "MIT"
+
+deps = ["pciaccess"]
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+[src]
+type = "git"
+url = "https://gitlab.freedesktop.org/mesa/drm.git"

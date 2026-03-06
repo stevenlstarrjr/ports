@@ -1,0 +1,20 @@
+name = "nodejs"
+version = "22.14.0"
+summary = "Node.js JavaScript runtime"
+license = "MIT"
+
+deps = []
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+[src]
+type = "url"
+url = "https://nodejs.org/dist/v22.14.0/node-v22.14.0-linux-x64.tar.xz"
+sha256 = "69b09dba5c8dcb05c4e4273a4340db1005abeafe3927efda2bc5b249e80437ec"

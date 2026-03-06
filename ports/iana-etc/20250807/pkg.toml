@@ -1,0 +1,21 @@
+name = "iana-etc"
+version = "20250807"
+summary = "Imported LFS stage8 script: 8.04-iana-etc.sh"
+license = "LFS"
+
+deps = []
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+
+[src]
+type = "url"
+url = "https://github.com/Mic92/iana-etc/releases/download/20250807/iana-etc-20250807.tar.gz"
+sha256 = "4f88470a2cac2a2f9568285aaff9aeaee0ab66c6ba3c12bba51adca915fa92b1"

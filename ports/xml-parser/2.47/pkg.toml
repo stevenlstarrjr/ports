@@ -1,0 +1,21 @@
+name = "xml-parser"
+version = "2.47"
+summary = "Imported LFS stage8 script: 8.44-xml-parser.sh"
+license = "LFS"
+
+deps = ["perl"]
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+
+[src]
+type = "url"
+url = "https://cpan.metacpan.org/authors/id/T/TO/TODDR/XML-Parser-2.47.tar.gz"
+sha256 = "ad4aae643ec784f489b956abe952432871a622d4e2b5c619e8855accbfc4d1d8"

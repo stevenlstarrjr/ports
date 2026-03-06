@@ -1,0 +1,19 @@
+name = "wayland"
+version = "latest"
+summary = "Wayland core protocol libraries and tools"
+license = "MIT"
+
+deps = ["libffi", "expat", "libxml2"]
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+[src]
+type = "git"
+url = "https://gitlab.freedesktop.org/wayland/wayland.git"

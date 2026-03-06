@@ -1,0 +1,19 @@
+name = "git"
+version = "2.49.0"
+summary = "Distributed version control system"
+license = "GPL-2.0-only"
+
+deps = ["curl", "expat", "openssl", "zlib", "perl"]
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+[src]
+type = "url"
+url = "https://www.kernel.org/pub/software/scm/git/git-2.49.0.tar.xz"

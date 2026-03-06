@@ -1,0 +1,5 @@
+name = "nodejs"
+summary = "Node.js runtime layered on top of base"
+ports = [
+  "nodejs"
+]

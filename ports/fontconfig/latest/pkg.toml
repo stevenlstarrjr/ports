@@ -1,0 +1,20 @@
+name = "fontconfig"
+version = "latest"
+summary = "Font discovery and configuration library"
+license = "MIT"
+
+deps = ["expat", "freetype"]
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+[src]
+type = "git"
+url = "https://gitlab.freedesktop.org/fontconfig/fontconfig.git"
+

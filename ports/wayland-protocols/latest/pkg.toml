@@ -1,0 +1,19 @@
+name = "wayland-protocols"
+version = "latest"
+summary = "Wayland protocol extensions"
+license = "MIT"
+
+deps = []
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+[src]
+type = "git"
+url = "https://gitlab.freedesktop.org/wayland/wayland-protocols.git"

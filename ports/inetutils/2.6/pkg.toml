@@ -1,0 +1,21 @@
+name = "inetutils"
+version = "2.6"
+summary = "Imported LFS stage8 script: 8.41-inetutils.sh"
+license = "LFS"
+
+deps = []
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+
+[src]
+type = "url"
+url = "https://ftp.gnu.org/gnu/inetutils/inetutils-2.6.tar.xz"
+sha256 = "68bedbfeaf73f7d86be2a7d99bcfbd4093d829f52770893919ae174c0b2357ca"

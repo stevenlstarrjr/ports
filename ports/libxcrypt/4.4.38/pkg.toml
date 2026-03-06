@@ -1,0 +1,21 @@
+name = "libxcrypt"
+version = "4.4.38"
+summary = "Imported LFS stage8 script: 8.27-libxcrypt.sh"
+license = "LFS"
+
+deps = []
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+
+[src]
+type = "url"
+url = "https://github.com/besser82/libxcrypt/releases/download/v4.4.38/libxcrypt-4.4.38.tar.xz"
+sha256 = "80304b9c306ea799327f01d9a7549bdb28317789182631f1b54f4511b4206dd6"

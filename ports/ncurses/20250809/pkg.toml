@@ -1,0 +1,21 @@
+name = "ncurses"
+version = "20250809"
+summary = "Imported LFS stage8 script: 8.30-ncurses.sh"
+license = "LFS"
+
+deps = []
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+
+[src]
+type = "url"
+url = "https://invisible-mirror.net/archives/ncurses/current/ncurses-6.5-20250809.tgz"
+sha256 = "b071468b8c79099a378ed9bea937a605509f71e720402e2541abe20ad753c555"

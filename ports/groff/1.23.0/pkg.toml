@@ -1,0 +1,21 @@
+name = "groff"
+version = "1.23.0"
+summary = "Imported LFS stage8 script: 8.63-groff.sh"
+license = "LFS"
+
+deps = ["findutils"]
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+
+[src]
+type = "url"
+url = "https://ftp.gnu.org/gnu/groff/groff-1.23.0.tar.gz"
+sha256 = "6b9757f592b7518b4902eb6af7e54570bdccba37a871fddb2d30ae3863511c13"

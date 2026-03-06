@@ -1,0 +1,21 @@
+name = "gzip"
+version = "1.14"
+summary = "Imported LFS stage8 script: 8.65-gzip.sh"
+license = "LFS"
+
+deps = []
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+
+[src]
+type = "url"
+url = "https://ftp.gnu.org/gnu/gzip/gzip-1.14.tar.xz"
+sha256 = "01a7b881bd220bfdf615f97b8718f80bdfd3f6add385b993dcf6efd14e8c0ac6"

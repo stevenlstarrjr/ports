@@ -1,0 +1,20 @@
+name = "libxkbcommon"
+version = "1.8.1"
+summary = "Keymap handling library for Wayland and X11"
+license = "MIT"
+
+deps = ["wayland"]
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+[src]
+type = "url"
+url = "https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.8.1.tar.gz"
+sha256 = "c65c668810db305c4454ba26a10b6d84a96b5469719fe3c729e1c6542b8d0d87"

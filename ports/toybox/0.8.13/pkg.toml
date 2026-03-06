@@ -1,0 +1,19 @@
+name = "toybox"
+version = "0.8.13"
+summary = "Toybox multicall command-line utilities"
+license = "0BSD"
+
+deps = []
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+[src]
+type = "git"
+url = "https://codeberg.org/landley/toybox.git"

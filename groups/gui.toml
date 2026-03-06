@@ -1,0 +1,30 @@
+name = "gui"
+summary = "Graphics and GUI stack: Wayland, Vulkan, Mesa, input, fonts, and Skia"
+ports = [
+  "wayland",
+  "wayland-protocols",
+  "libdrm",
+  "mesa",
+  "vulkan-headers",
+  "vulkan-loader",
+  "vulkan-memory-allocator",
+  "libxkbcommon",
+  "pixman",
+  "seatd",
+  "hwdata",
+  "libdisplay-info",
+  "libevdev",
+  "mtdev",
+  "libinput",
+  "libpng",
+  "jpeg-turbo",
+  "giflib",
+  "libwebp",
+  "freetype",
+  "icu",
+  "harfbuzz",
+  "fontconfig",
+  "skia",
+  "yoga",
+  "wlroots"
+]

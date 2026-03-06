@@ -1,0 +1,19 @@
+name = "mesa"
+version = "latest"
+summary = "Open-source OpenGL and Vulkan userspace drivers"
+license = "MIT"
+
+deps = ["libdrm", "wayland", "wayland-protocols", "vulkan-headers", "glslang", "llvm", "libclc", "mako", "pyyaml"]
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+[src]
+type = "git"
+url = "https://gitlab.freedesktop.org/mesa/mesa.git"

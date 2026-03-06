@@ -1,0 +1,19 @@
+name = "libinput"
+version = "latest"
+summary = "Input device handling library"
+license = "MIT"
+
+deps = ["libevdev", "mtdev", "systemd", "libxkbcommon"]
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+[src]
+type = "git"
+url = "https://gitlab.freedesktop.org/libinput/libinput.git"

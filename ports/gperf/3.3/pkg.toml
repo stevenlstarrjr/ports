@@ -1,0 +1,21 @@
+name = "gperf"
+version = "3.3"
+summary = "Imported LFS stage8 script: 8.39-gperf.sh"
+license = "LFS"
+
+deps = ["gdbm"]
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+
+[src]
+type = "url"
+url = "https://ftp.gnu.org/gnu/gperf/gperf-3.3.tar.gz"
+sha256 = "fd87e0aba7e43ae054837afd6cd4db03a3f2693deb3619085e6ed9d8d9604ad8"

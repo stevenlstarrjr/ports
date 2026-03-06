@@ -1,0 +1,21 @@
+name = "libelf"
+version = "0.193"
+summary = "Imported LFS stage8 script: 8.49-libelf.sh"
+license = "LFS"
+
+deps = ["openssl"]
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+
+[src]
+type = "url"
+url = "https://sourceware.org/ftp/elfutils/0.193/elfutils-0.193.tar.bz2"
+sha256 = "7857f44b624f4d8d421df851aaae7b1402cfe6bcdd2d8049f15fc07d3dde7635"

@@ -1,0 +1,19 @@
+name = "wlroots"
+version = "latest"
+summary = "Modular Wayland compositor library"
+license = "MIT"
+
+deps = ["wayland", "wayland-protocols", "libdrm", "mesa", "vulkan-headers", "vulkan-loader", "libxkbcommon", "pixman", "seatd", "libdisplay-info", "libinput"]
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+[src]
+type = "git"
+url = "https://gitlab.freedesktop.org/wlroots/wlroots.git"

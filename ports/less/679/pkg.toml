@@ -1,0 +1,21 @@
+name = "less"
+version = "679"
+summary = "Imported LFS stage8 script: 8.42-less.sh"
+license = "LFS"
+
+deps = ["ncurses"]
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+
+[src]
+type = "url"
+url = "https://www.greenwoodsoftware.com/less/less-679.tar.gz"
+sha256 = "9b68820c34fa8a0af6b0e01b74f0298bcdd40a0489c61649b47058908a153d78"

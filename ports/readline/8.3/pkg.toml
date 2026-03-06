@@ -1,0 +1,21 @@
+name = "readline"
+version = "8.3"
+summary = "Imported LFS stage8 script: 8.12-readline.sh"
+license = "LFS"
+
+deps = ["ncurses"]
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+
+[src]
+type = "url"
+url = "https://ftp.gnu.org/gnu/readline/readline-8.3.tar.gz"
+sha256 = "fe5383204467828cd495ee8d1d3c037a7eba1389c22bc6a041f627976f9061cc"

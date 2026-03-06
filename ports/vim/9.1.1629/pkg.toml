@@ -1,0 +1,21 @@
+name = "vim"
+version = "9.1.1629"
+summary = "Imported LFS stage8 script: 8.73-vim.sh"
+license = "LFS"
+
+deps = ["texinfo"]
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+
+[src]
+type = "url"
+url = "https://github.com/vim/vim/archive/v9.1.1629/vim-9.1.1629.tar.gz"
+sha256 = "d92c6550e8eca741085fce94e5b0d3d13d2c62fcb5b69bf5a6010d3114de4828"

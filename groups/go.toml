@@ -1,0 +1,5 @@
+name = "go"
+summary = "Go toolchain layered on top of base"
+ports = [
+  "go"
+]

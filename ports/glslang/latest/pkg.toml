@@ -1,0 +1,19 @@
+name = "glslang"
+version = "latest"
+summary = "Khronos reference GLSL/ESSL to SPIR-V compiler"
+license = "BSD-3-Clause"
+
+deps = ["spirv-headers", "spirv-tools"]
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+[src]
+type = "git"
+url = "https://github.com/KhronosGroup/glslang.git"

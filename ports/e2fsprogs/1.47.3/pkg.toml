@@ -1,0 +1,21 @@
+name = "e2fsprogs"
+version = "1.47.3"
+summary = "Imported LFS stage8 script: 8.81-e2fsprogs.sh"
+license = "LFS"
+
+deps = ["util-linux"]
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+
+[src]
+type = "url"
+url = "https://downloads.sourceforge.net/project/e2fsprogs/e2fsprogs/v1.47.3/e2fsprogs-1.47.3.tar.gz"
+sha256 = "2f5164e64dd7d91eadd1e0e8a77d92c06dd7837bb19f1d9189ce1939b363d2b4"

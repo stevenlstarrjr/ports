@@ -1,0 +1,19 @@
+name = "llvm"
+version = "latest"
+summary = "LLVM compiler infrastructure"
+license = "Apache-2.0 WITH LLVM-exception"
+
+deps = ["cmake", "ninja", "python"]
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+[src]
+type = "git"
+url = "https://github.com/llvm/llvm-project.git"

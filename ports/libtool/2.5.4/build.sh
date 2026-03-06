@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$PKG_SRC_DIR"
+./configure --prefix=/usr
+
+make -j"${PKG_JOBS:-1}"
+
+
+
+rm -fv /usr/lib/libltdl.a

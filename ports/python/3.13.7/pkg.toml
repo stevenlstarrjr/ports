@@ -1,0 +1,21 @@
+name = "python"
+version = "3.13.7"
+summary = "Imported LFS stage8 script: 8.51-python.sh"
+license = "LFS"
+
+deps = ["libffi"]
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+
+[src]
+type = "url"
+url = "https://www.python.org/ftp/python/3.13.7/Python-3.13.7.tar.xz"
+sha256 = "5462f9099dfd30e238def83c71d91897d8caa5ff6ebc7a50f14d4802cdaaa79a"

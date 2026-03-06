@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -euo pipefail
+rm -rf "$PKG_BUILD_DIR"
+cmake -S "$PKG_SRC_DIR" -B "$PKG_BUILD_DIR" \
+  -DCMAKE_INSTALL_PREFIX=/usr \
+  -DCMAKE_BUILD_TYPE=Release \
+  -DBUILD_TESTS=OFF \
+  -DBUILD_WSI_WAYLAND_SUPPORT=ON \
+  -DBUILD_WSI_XCB_SUPPORT=OFF \
+  -DBUILD_WSI_XLIB_SUPPORT=OFF
+cmake --build "$PKG_BUILD_DIR" -j"${PKG_JOBS:-1}"

@@ -1,0 +1,21 @@
+name = "procps"
+version = "4.0.5"
+summary = "Imported LFS stage8 script: 8.79-procps.sh"
+license = "LFS"
+
+deps = []
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+
+[src]
+type = "url"
+url = "https://sourceforge.net/projects/procps-ng/files/Production/procps-ng-4.0.5.tar.xz"
+sha256 = "c2e6d193cc78f84cd6ddb72aaf6d5c6a9162f0470e5992092057f5ff518562fa"

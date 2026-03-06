@@ -1,0 +1,19 @@
+name = "llvm-spirv"
+version = "latest"
+summary = "LLVM/SPIR-V bi-directional translator"
+license = "NCSA"
+
+deps = ["llvm", "spirv-headers", "spirv-tools", "cmake", "ninja", "python"]
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+[src]
+type = "git"
+url = "https://github.com/KhronosGroup/SPIRV-LLVM-Translator.git"

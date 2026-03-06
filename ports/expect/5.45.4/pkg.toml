@@ -1,0 +1,21 @@
+name = "expect"
+version = "5.45.4"
+summary = "Imported LFS stage8 script: 8.17-expect.sh"
+license = "LFS"
+
+deps = ["tcl"]
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+
+[src]
+type = "url"
+url = "https://prdownloads.sourceforge.net/expect/expect5.45.4.tar.gz"
+sha256 = "49a7da83b0bdd9f46d04a04deec19c7767bb9a323e40c4781f89caf760b92c34"

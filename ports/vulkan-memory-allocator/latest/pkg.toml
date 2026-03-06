@@ -1,0 +1,20 @@
+name = "vulkan-memory-allocator"
+version = "latest"
+summary = "Header-only Vulkan memory allocation library"
+license = "MIT OR Apache-2.0"
+
+deps = ["vulkan-headers"]
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+[src]
+type = "git"
+url = "https://github.com/GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator.git"
+

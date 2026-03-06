@@ -1,0 +1,21 @@
+name = "attr"
+version = "2.5.2"
+summary = "Imported LFS stage8 script: 8.24-attr.sh"
+license = "LFS"
+
+deps = []
+
+install_mode = "store"
+
+[build]
+system = "make"
+
+[scripts]
+build = "build.sh"
+install = "install.sh"
+
+
+[src]
+type = "url"
+url = "https://download.savannah.gnu.org/releases/attr/attr-2.5.2.tar.gz"
+sha256 = "39bf67452fa41d0948c2197601053f48b3d78a029389734332a6309a680c6c87"
